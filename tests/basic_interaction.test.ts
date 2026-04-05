@@ -67,8 +67,6 @@ test("Sum", async ({ page }) => {
     console.log("Input1:", await sum1input.inputValue());
     console.log("Input2:", await sum2input.inputValue());
 
-    await page.pause();
-
     // Click the "Get Sum" button
     await getValuesBtn.click();
 
