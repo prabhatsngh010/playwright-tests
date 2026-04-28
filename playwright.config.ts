@@ -1,7 +1,7 @@
 import type { PlaywrightTestConfig } from "@playwright/test";
 
 const config: PlaywrightTestConfig = {
-    testMatch: ["tests/alerts.test.ts"],
+    testMatch: ["tests/**/*.spec.ts"],
     use: {
         headless: false,
         screenshot: "on",

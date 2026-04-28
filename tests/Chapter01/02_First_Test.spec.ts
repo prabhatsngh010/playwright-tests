@@ -6,7 +6,7 @@ import { test, expect } from '@playwright/test';
  */
 test('My First Playwright TypeScript Test', async ({ page }) => {
     // Go to URL
-    await page.goto('https://www.google.com/');
+    await page.goto('https://www.google.com/'); //this will give the captcha issue
 
     // Search with keywords
     await page.getByLabel('Search', { exact: true }).fill('playwright by testers talk');
@@ -16,5 +16,5 @@ test('My First Playwright TypeScript Test', async ({ page }) => {
     await page.getByRole('link', { name: 'Playwright by Testers Talk' }).first().click();
 
     // Validate web page title 
-    await expect(page).toHaveTitle('Playwright by Testers Talk☑️ - YouTube');
+    await expect(page).toHaveTitle('Playwright by Testers Talk ✅ - YouTube');
 });
